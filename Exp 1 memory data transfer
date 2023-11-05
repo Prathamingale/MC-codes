@@ -1,0 +1,19 @@
+ORG 0x0000
+
+MOV RO, #20H
+
+MOV R1, #30H
+
+MOV R2, #10
+
+MOV A, @RO
+
+MOV @R1, A
+
+INC RO
+
+INC R1
+
+DJNZ R2, -3
+
+END
