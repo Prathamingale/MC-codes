@@ -1,0 +1,15 @@
+ORG 0x0000   ; Start address
+
+MOV DPTR, #0x8000  ; Set DPTR to the starting address of external RAM
+MOV R0, #10   ; Number of bytes to transfer
+
+; Copy data from internal RAM (R1 register) to external RAM
+MOV A, R1   ; Load data from internal RAM to accumulator A
+MOVX @DPTR, A  ; Store data in external RAM
+
+INC DPTR    ; Increment the external RAM address
+INC R1      ; Increment the internal RAM data source
+
+DJNZ R0, -3 ; Decrement R0 and repeat if not zero
+
+END
