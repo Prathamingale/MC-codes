@@ -1,0 +1,47 @@
+1) Full drive Mode
+
+#include<reg51.h>
+
+void TIMIDelay(void) //To create a delay of 200 ms using T1 Timer and M1 Mode
+
+Un gned int x;for ( x = 0 ; x < 20 x++)
+
+TMOD 0x10;
+
+TH1-0xDB;
+
+TL1-0xFF;
+
+TRl = 1
+
+While (TF * 1 = 0)
+
+TRI 1 =0:
+
+TF * 1 = 0
+
+void main()
+
+while(1) // To repeat infinitely
+
+P * 1 = 0 * 0C ;
+
+TIMIDelay();
+
+/ P 1=0000 1000 First Step
+
+Pi = 0 * 6
+
+//P1=0000 0100 Second Step
+
+TIMIDelay();
+
+P * 1 = 0 * 3TIMIDelay();
+
+/ P 1=0000 0010 Third Step
+
+P * 1 = 0 * 9
+
+/ P 1=0000 0001 Fourth Step
+
+T|M| * Delay ()
