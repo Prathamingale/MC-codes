@@ -1,0 +1,31 @@
+#include<AT89X51.h>
+
+void Delay(void);
+
+void main (void)
+
+{
+
+while(1)
+
+P2 = 0x55;
+
+Delay();
+
+P2 = 0xAA;
+
+Delay();
+
+}
+
+void Delay(void)
+
+{
+
+int j;
+
+int i;
+
+for(i=0;i<10;i++)
+
+for(j=0;j<10000;j++)
